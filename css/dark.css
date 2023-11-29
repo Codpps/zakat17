@@ -1,0 +1,80 @@
+:root {
+    --bg-dark: #272525;
+    --bg-head: rgb(21, 20, 20);
+    --bg-body: #282828;
+    --bg-button: #191919;
+    --bg-input: #404040;
+    --text-color: white;
+}
+body.dark-mode .navbar {
+    background-color: rgb(32, 30, 30);
+    color: var(--text-color);
+    border-color: white;
+    transition: .5s;
+}
+body.dark-mode .link ul {
+    background-color: #363535;
+    transition: .5s;
+}
+body.dark-mode .link a {
+    color: var(--text-color);
+    transition: .5s;
+}
+
+body.dark-mode .hero {
+    background-color: var(--bg-dark);
+    transition: .5s;
+}
+body.dark-mode .Lhead {
+  background-color: var(--bg-head);  
+  transition: .5s;
+}
+body.dark-mode .Lbody {
+    background-color: var(--bg-body);
+    transition: .5s;
+}
+body.dark-mode .Lbody label {
+    color: var(--text-color);
+
+}
+body.dark-mode button {
+    background-color: var(--bg-button);
+    transition: .5s;
+}
+body.dark-mode input {
+    background-color: var(--bg-input);
+    color: var(--text-color);
+    transition: .5s;
+}
+body.dark-mode .page {
+    background-color: var(--bg-dark);
+    transition: .5s;
+}
+body.dark-mode .kalkulator {
+    background-color: var(--bg-body);
+    transition: .5s;
+}
+body.dark-mode .Khead{
+    background-color: var(--bg-head);
+    transition: .5s;
+}
+body.dark-mode .Kbody {
+    background-color: var(--bg-body);
+    transition: .5s;
+}
+body.dark-mode p {
+    color: var(--text-color);
+    transition: .5s;
+}
+body.dark-mode .hasil {
+    color: var(--text-color);
+    transition: .5s;
+}
+body.dark-mode .info p {
+    color: var(--text-color);
+    transition: .5s;
+}
+body.dark-mode .in {
+  background-color: var(--bg-body);
+  box-shadow: 1px -2px 4px var(--bg-head);
+}

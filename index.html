@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat17</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/dark-btn.css">
+    <link rel="shortcut icon" href="assets/logo17.png" type="image/x-icon">
+    <script src="JS/main.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/rupiah.js"></script>
+</head>
+<body>
+    <section id="login">
+        <nav>
+            <div class="navbar">
+                <div class="name">
+                    <img src="assets/logo17.png" alt="logo 17">
+                    <h1>ZAKAT 17</h1>
+                </div>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#kalkulator">kalkulator</a></li>
+                </ul>
+            </div>
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+              </label>            
+        </nav>
+        <div class="hero">
+            <div class="login">
+                <div class="Lhead">
+                    <img src="assets/logo17.png" alt="">
+                    <h1>LOGIN!!</h1>
+                </div>
+                <div class="Lbody">
+                    <div class="user">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="username">
+                    </div>
+                    <div class="pass">
+                        <label for="password">Password:</label>
+                        <input type="password" id="ipassword" placeholder="password">
+                        <div class="showPW">
+                            <input type="checkbox" id="showPW" onclick="showPassword()">
+                        </div>
+                    </div>
+                    <button><a href="#kalkulator">LOGIN</a></button>
+                </div>
+            </div>
+          </div>
+    </section>
+    <section id="kalkulator">
+        <div class="page">
+            <div class="kalkulator">
+                <div class="Khead">
+                    <h1>KALKULATOR ZAKAT 17</h1>
+                </div>
+                <div class="Kbody">
+                    <p>Gaji Perbulan :</p>
+                    <input type="text" id="gaji" placeholder="Masukkan Gaji" oninput="formatRupiah(this)" />
+                </div>
+                <button onclick="hitungZakat()">HITUNG</button>
+                <p>Keterangan : <span id="ket"></span></p>
+                <div class="hasil">
+                    <p id="info"></p>
+                    <span id="total"></span>
+                    <div class="niat">
+                        <span id="niat">
+                        </div>
+                 </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer">
+            <div class="in">
+                <img src="assets/logo17.png" alt="">
+                <ul>
+                    <li>Nama: Muhamad Dafa Fairuz</li>
+                    <li>Sekolah: SMKN 17 JAKARTA</li>
+                    <li>kelas: X RPL 2</li>
+                </ul>
+                </div>
+            </div>
+    </section>
+    <script>
+        const body = document.body;
+        function toggleDarkMode() {
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>

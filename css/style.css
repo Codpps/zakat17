@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: white;
+    --navbar-color: rgb(188, 255, 188);
+    --head-color: rgb(129, 212, 240);
+    --button-color: rgb(74, 168, 199);
+
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgb(98, 198, 232);
+    padding: 25px;
+    height: 50px;
+    border: 1px solid;
+    transition: .5s;
+}
+
+.name {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name h1 {
+    margin-left: 12px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+}
+
+.name img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 231, 231);
+    border: 1px solid;
+    padding: 5px;
+    transition: .5s;
+}
+
+.link li {
+    margin-left: 30px;
+    list-style-type: none;
+    padding: 3px;
+    font-size: 20px;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.link a::active {
+    color: rgb(115, 197, 238)9, 159, 255;
+}
+
+#darkModeToggle {
+    text-align: right;
+    justify-content: end;
+    align-items: end;
+}
+
+.Lhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--head-color);
+    padding: 9px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+
+}
+
+.Lhead img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.Lhead h1 {
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Lbody {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    height: 280px;
+    transition: .5s;
+}
+.Lbody label {
+    transition: .5s;
+}
+
+.user,
+.pass {
+    margin-bottom: 30px;
+    position: relative;
+    transition: .5s;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+        transition: .5s;
+}
+
+.showPW {
+    position: absolute;
+    top: 70%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.password-container input[type="password"] {
+    padding-right: 25px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.page {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    transition: .5s;
+}
+
+.kalkulator {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin: 3px;
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 123%;
+    transition: .5s;
+}
+
+.Khead {
+    background-color: var(--head-color);
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    transition: .5s;
+}
+
+.Khead h1 {
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.Kbody {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+.Kbody input[type="text"] {
+   width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    right: 1px;
+    transition: .5s;
+}
+
+
+.Kbody p {
+    font-size: 15px;
+    text-align: center;
+    position: static;
+}
+
+p {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hasil {
+    font-size: 30px;
+    text-align: center;
+    transition: .5s;
+}
+
+.info p {
+    font-size: 20px;
+    transition: .5s;
+}
+
+#ket {
+    font-weight: normal;
+}
+
+#niat {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+#total {
+    font-size: 40px;
+    font-weight: normal;
+}
+.in {
+    display: flex;
+    background-color: var(--head-color);
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: no-drop;
+    box-shadow: 1px -2px 4px var(--button-color);
+    transition: .5s;
+    
+}
+.in img {
+    width: 50px;
+    height: 50px;
+}
+.in li {
+    list-style-type: none;
+    margin-left: 10px;
+    color: white;
+}
+
+
+@media (min-width: 280px) and (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+        height: 40px;
+    }
+
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .name img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .link ul {
+        padding: 3px;
+    }
+
+    .kalkulator {
+        height: auto;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    #ket {
+        font-weight: normal;
+    }
+
+    #niat {
+        font-size: 20px;
+        padding: 5px auto;
+    }
+
+    #total {
+        font-size: 30px;
+    }
+    .in img {
+        width: 50px;
+        height: 50px;
+    }
+    .in li {
+        list-style-type: none;
+        margin-left: 10px;
+        color: white;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 915px) {
+    .slider img {
+        height: 250px;
+    }
+
+    .navbar {
+        padding: 15px;
+        height: 40px;
+    }
+
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .name img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .link ul {
+        padding: 3px;
+    }
+
+    .kalkulator {
+        height: auto;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    #ket {
+        font-weight: normal;
+    }
+
+    #niat {
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 40px;
+    }
+    .in {
+      justify-content: center;
+      align-items: center;
+    }
+    .in img {
+        width: 60px;
+        height: 60px;
+    }
+    .in li {
+        list-style-type: none;
+        margin-left: 10px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 915px) and (max-width: 1024px) {
+    .slider img {
+        height: 250px;
+    }
+
+    .navbar {
+        padding: 15px;
+        height: 40px;
+    }
+
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .name img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .link ul {
+        padding: 3px;
+    }
+
+    .kalkulator {
+        height: auto;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    #ket {
+        font-weight: normal;
+    }
+
+    #niat {
+        font-size: 25px;
+    }
+
+    #total {
+        font-size: 20px;
+    }
+    .in {
+        justify-content: center;
+        align-items: center;
+    }
+    .in img {
+        width: 80px;
+        height: 80px;
+    }
+    .in li {
+        list-style-type: none;
+        margin-left: 10px;
+        color: white;
+        font-size: 30px;
+    }
+}
